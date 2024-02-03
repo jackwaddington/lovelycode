@@ -6,17 +6,11 @@
 /*   By: jwadding <jwadding@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/03 13:18:57 by jwadding          #+#    #+#             */
-/*   Updated: 2024/02/03 16:13:35 by jwadding         ###   ########.fr       */
+/*   Updated: 2024/02/03 16:17:19 by jwadding         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdlib.h>
 #include <stdio.h>
-
-/*
-struct frame{
-	char *xxx;
-	void *left;} typedef party
-*/
 
 size_t str_len(char *string)
 {
@@ -27,7 +21,6 @@ size_t str_len(char *string)
 		len++;
 	return len;
 }
-
 
 char *create_dut(char *dut)
 {
