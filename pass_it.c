@@ -6,7 +6,7 @@
 /*   By: jwadding <jwadding@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/03 13:18:57 by jwadding          #+#    #+#             */
-/*   Updated: 2024/02/03 16:08:43 by jwadding         ###   ########.fr       */
+/*   Updated: 2024/02/03 16:13:35 by jwadding         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdlib.h>
@@ -46,25 +46,24 @@ int	str_copy(char *to, char *from)
 	
 	i = -1;
 	if(!from)
-		return -1;
+		return (i);
 	while(from[i++] != '\0')
 	{
 		to[i] = from[i];
 	}
-	printf("from  is %s, to is %s\n", from, to);
 	return (i);
 }
 
 int	main(void)
 {
 	char dut[5]	= {'c', 'h', 'i', 'e', '\0'};
-	char *ptr;
-	int	result;
+	char *left_hand_side;
+	int	quantity;
 // create a location I can pass to
-	ptr = create_dut(dut);
+	left_hand_side = create_dut(dut);
 // pass it to that location
-	result = str_copy(ptr, dut);
+	quantity = str_copy(left_hand_side, dut);
 // show me you did it
-	printf("dut%s\nresult is %d\n", ptr, result);
-	free(ptr);
+	printf("dut%s\nresult is %d\n", left_hand_side, quantity);
+	free(left_hand_side);
 }
