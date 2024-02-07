@@ -6,7 +6,7 @@
 /*   By: jwadding <jwadding@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/31 13:50:17 by jwadding          #+#    #+#             */
-/*   Updated: 2024/02/05 20:36:02 by jwadding         ###   ########.fr       */
+/*   Updated: 2024/02/07 19:26:59 by jwadding         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ void	ft4(int len, int i)
 		printf("ft4 int is %d\n", i);
 	}
 }
-
+/*
 int	main(void)
 {
 	int	i = -1;
@@ -66,4 +66,4 @@ int	main(void)
 	printf("Increment in loop i++:\n");
 	ft4(len, i);
 }
-[c1
+*/

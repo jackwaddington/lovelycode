@@ -6,11 +6,10 @@
 /*   By: jwadding <jwadding@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/03 13:18:57 by jwadding          #+#    #+#             */
-/*   Updated: 2024/02/03 16:17:19 by jwadding         ###   ########.fr       */
+/*   Updated: 2024/02/07 19:29:05 by jwadding         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdlib.h>
-#include <stdio.h>
+#include "header.h"
 
 size_t str_len(char *string)
 {
