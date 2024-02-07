@@ -9,12 +9,14 @@ OBJS = $(SRCS:.c=.o)
 
 CC = gcc
 
+A = ar rcs
+
 CFLAGS = -Wall -Wextra -Werror
 
 all:$(FILE)
 
 $(FILE): $(OBJS)
-	ar rcs $(FILE) $(OBJS) $(NAME)
+	$(CC) -o $@ $^
 
 %.o:%.c
 	$(CC) $(CFLAGS) -c $< -o $@

@@ -6,7 +6,7 @@
 /*   By: jwadding <jwadding@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/03 13:18:57 by jwadding          #+#    #+#             */
-/*   Updated: 2024/02/07 19:29:05 by jwadding         ###   ########.fr       */
+/*   Updated: 2024/02/07 20:41:55 by jwadding         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "header.h"
@@ -45,7 +45,7 @@ int	str_copy(char *to, char *from)
 	}
 	return (i);
 }
-
+/*
 int	main(void)
 {
 	char dut[5]	= {'c', 'h', 'i', 'e', '\0'};
@@ -59,3 +59,4 @@ int	main(void)
 	printf("dut%s\nresult is %d\n", left_hand_side, quantity);
 	free(left_hand_side);
 }
+*/
