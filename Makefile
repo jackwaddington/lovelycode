@@ -1,9 +1,9 @@
 FILE = lovelycode.a
 
-SRCS = fd.c\
-	   fd_info.c\
+SRCS = fd_utils.c\
 	   incrementing.c\
-	   pass_it.c
+	   pass_it.c\
+	   take_input.c
 
 OBJS = $(SRCS:.c=.o)
 

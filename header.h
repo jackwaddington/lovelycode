@@ -6,7 +6,7 @@
 /*   By: jwadding <jwadding@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/07 18:43:48 by jwadding          #+#    #+#             */
-/*   Updated: 2024/02/07 19:28:26 by jwadding         ###   ########.fr       */
+/*   Updated: 2024/02/08 17:13:09 by jwadding         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef HEADER_H
@@ -20,12 +20,25 @@
 typedef struct jack_struct
 {
 	void				*content;
+	int					no1;
+	int					no2;
+	int					no3;
 	struct	jack_struct	*next;
 }				jack_list;
 
-int fd_info(int fd);
+// incrementers
 void	ft1(int len, int i);
 void	ft2(int len, int i);
 void	ft3(int len, int i);
 void	ft4(int len, int i);
+
+// file  descriptors
+int fd_info(int fd);
+int	write_to_a_fd(char *text);
+int	read_from_a_fd(int fd);
+
+// list tools
+jack_list *ft_lstnew(void *content);
+jack_list *ft_lstlast(jack_list *node);
+jack_list *ft_lstadd_back(jack_list **node, jack_list *new);
 #endif
