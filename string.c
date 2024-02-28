@@ -1,6 +1,6 @@
 char *create_string(char *s)
 {
-	char *input = "input";
+	char input[] = "aaaaa";
 	char *rtn;
 
 	rtn = (char) malloc (sizeof input * (sizeof char);
@@ -9,7 +9,10 @@ char *create_string(char *s)
 
 void change_p2(char *s)
 {
-	s[1] += 1;
+	int i;
+
+	i = sizeof(s) / 2;
+	s[i] += 1;
 }
 
 void print_string(char *s)
