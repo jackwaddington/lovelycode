@@ -6,7 +6,7 @@
 /*   By: jwadding <jwadding@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/07 18:40:20 by jwadding          #+#    #+#             */
-/*   Updated: 2024/02/08 17:22:06 by jwadding         ###   ########.fr       */
+/*   Updated: 2024/02/15 21:16:38 by jwadding         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include"header.h"
@@ -21,7 +21,7 @@ int	write_to_a_fd(char *s)
 {
 	int fd;
 
-	fd = open("file.txt", O_RDWR | O_CREAT | O_APPEND);
+	fd = open("file.txt", O_RDWR | O_CREAT | O_APPEND, 0700);
 	fd_info(fd);
 	write(fd, &s, sizeof(s));
 	return (fd);

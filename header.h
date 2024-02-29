@@ -6,7 +6,7 @@
 /*   By: jwadding <jwadding@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/07 18:43:48 by jwadding          #+#    #+#             */
-/*   Updated: 2024/02/08 17:13:09 by jwadding         ###   ########.fr       */
+/*   Updated: 2024/02/15 15:12:12 by jwadding         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef HEADER_H
@@ -36,6 +36,13 @@ void	ft4(int len, int i);
 int fd_info(int fd);
 int	write_to_a_fd(char *text);
 int	read_from_a_fd(int fd);
+
+// str tools
+size_t	str_len(char *string);
+char *create_dit(char *dut);
+int	str_copy(char *from, char *to);
+int	str_move(char *from, char *to);
+
 
 // list tools
 jack_list *ft_lstnew(void *content);
