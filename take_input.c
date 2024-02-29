@@ -30,11 +30,13 @@ int	main(arg c, arg v)
 int main(void)
 {
 	int fd;
-	char string[] = "hello";
+
+	char   	string[] = "hello";
 	printf("Welcome. Our test string is %s\n", string);
 	fd_info(0);
 	printf("\nNow we pass it to a file\n");
 	fd = write_to_a_fd(string);
+	fd_info(fd);
 	printf("Can we now put some stuff in the file?\n");
 	
 }
