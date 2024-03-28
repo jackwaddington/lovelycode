@@ -28,6 +28,22 @@ unsigned char up(unsigned char octet)
 	return (octet ^ octet);
 }
 
+unsigned char	bit_one(unsigned char octet)
+{
+	unsigned char r = 1;
+	octet = octet ^ r;
+	return(octet);
+}
+
+unsigned char bit_six(unsigned char octet)
+{
+	unsigned char r = 32;
+	octet = octet ^ r;
+	return(octet);
+}
+
+
+
 void	printer(unsigned char octet)
 {
 	int div = 128;
@@ -76,5 +92,19 @@ int	main(void)
 	printer(b << 1);
 	printf("b>>1 = %d\n",b >> 1);
 	printer(b >> 1);
+	
 
+	unsigned char c = 0;
+	printf("\n\n New test \n\n");
+	printer(c);
+	c = bit_one(c);
+	printer(c);
+	c = bit_six(c);
+
+	printer(c);
+	c = bit_one(c);
+	printer(c);
+	c = bit_one(c);
+	printer(c);
+	
 }
